@@ -1,55 +1,67 @@
 <!doctype html>
 <html lang="ja">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <title>拾得物管理システム 拾得物入力画面</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><i class="bi bi-search"></i> 拾得物管理システム</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">登録機能</a>
-                <ul class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="v_fuser_reg.php">拾得者（ユーザ）登録 <i class="bi bi-person"></i></a></li>
-                  <li><a class="dropdown-item" href="v_fitem_reg.php">拾得物登録 <i class="bi bi-file-earmark-arrow-up"></i></a></li>
+            <a class="navbar-brand" href="#"><i class="bi bi-search"></i> 拾得物管理システム</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">登録機能</a>
+                        <ul class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="v_fuser_reg.php">拾得者（ユーザ）登録 <i
+                                        class="bi bi-person"></i></a></li>
+                            <li><a class="dropdown-item" href="v_fitem_reg.php">拾得物登録 <i
+                                        class="bi bi-file-earmark-arrow-up"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">拾得物検索機能</a>
+                        <ul class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="v_fitem_search.php">拾得物検索 <i
+                                        class="bi bi-search"></i></a></li>
+                            <li><a class="dropdown-item" href="v_litem_frequest.php">遺失物捜索依頼 <i
+                                        class="bi bi-file-earmark-check"></i></a></li>
+                            <li><a class="dropdown-item" href="v_frequest_list.php">遺失物捜索一覧 <i
+                                        class="bi bi-table"></i></a></li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">拾得物検索機能</a>
-                <ul class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="v_fitem_search.php">拾得物検索 <i class="bi bi-search"></i></a></li>
-                  <li><a class="dropdown-item" href="v_litem_frequest.php">遺失物捜索依頼 <i class="bi bi-file-earmark-check"></i></a></li>
-                  <li><a class="dropdown-item" href="v_frequest_list.php">遺失物捜索一覧 <i class="bi bi-table"></i></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
-      </nav>
+    </nav>
     <div class="From">
         <div class="From-Item">
             <p class="From-Item-Label">
-                <samp class="From-Item-Label-required">必須</samp>拾得物名
+                <samp class="From-Item-Label-required">必須</samp>　拾得物名
             </p>
             <input type="text" class="From-Item-Input" placeholder="例）帽子">
         </div>
 
         <div class="From-Item">
             <p class="From-Item-Label">
-                <samp class="From-Item-Label-required">必須</samp>拾得物分類
+                <samp class="From-Item-Label-required">必須</samp>　拾得物分類
             </p>
             <from>
                 <label>
-                    <input type="checkbox" name="classification"> カバン
+                    <input type="checkbox" name="classification"> 鞄
                 </label>
                 <label>
                     <input type="checkbox" name="classification"> 財布
@@ -73,33 +85,50 @@
 
         <div class="From-Item">
             <p class="From-Item-Label">
-                <samp class="From-Item-Label-required">必須</samp>拾得場所
+                <samp class="From-Item-Label-required">必須</samp>　拾得場所
             </p>
             <input type="text" class="From-Item-Input" placeholder="例）1号館1021教室">
         </div>
 
         <div class="From-Item">
             <p class="From-Item-Label">
-                <samp class="From-Item-Label-required">必須</samp>拾得日時
+                <samp class="From-Item-Label-required">必須</samp>　拾得日時
             </p>
             <input type="date" class="From-Item-Input" placeholder="例）2023/5/25">
         </div>
 
         <div class="From-Item">
             <p class="From-Item-Label isMsg">
-                <samp class="From-Item-Label-Required">必須</samp>特徴
+                <samp class="From-Item-Label-Required">必須</samp>　特徴
             </p>
-            <textarea class="From-Item-Textarea"></textarea>
+            <textarea class="From-Item-Textarea" placeholder="例）青い帽子"></textarea>
         </div>
-        <input type="submit" class="From-Button" value="送信する">
-     </div>
+
+        <div class="From-Item">
+            <input type="file" name="img">
+        </div>
+
+        <div class="From-Item">
+            <p class="From-Item-Label">
+                <samp class="From-Item-Label-required">必須</samp>　メールアドレス
+            </p>
+            <input type="eamil" class="From-Item-Input" placeholder="info@bunkyo.com">
+        </div>
+        
+        <input type="submit" class="From-Button" value="登録する">
+    </div>
 
     <footer class="fixed-bottom bg-success text-light text-end">
         <div>文教大学 情報学部 情報システム学科 プロジェクト演習BC_チームB</div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
