@@ -37,53 +37,37 @@
       </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col p-5 text-white rounded mt-3 bg-success">
-                <h1 class="display-4 fst-italic">拾得物管理システム</h1>
-                <hr>
-                <p>このシステムは文教大学湘南キャンパスの施設内における拾得物を管理するためのシステムです．プロジェクト演習BCの授業において学習用の演習システムとして開発を行います．</p>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col card m-1">
-                <div class="card-body">
-                    <h5 class="card-title">拾得者（ユーザ）登録</h5>
-                    <hr>
-                    <p class="card-text">拾得物の登録を行う際に必要となるユーザの情報を登録するための機能です</p>
-                    <a href="#" class="btn btn-success">登録する</a>
-                </div>
-            </div>
-            <div class="col card m-1">
-                <div class="card-body">
-                    <h5 class="card-title">拾得物登録</h5>
-                    <hr>
-                    <p class="card-text">拾得物が発生した際に，拾得物の情報をシステムに登録するための機能です</p>
-                    <a href="#" class="btn btn-success">登録する</a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col card m-1">
-                <div class="card-body">
-                    <h5 class="card-title">拾得物検索機能</h5>
-                    <hr>
-                    <p class="card-text">システムに登録されている拾得物のデータを対象として検索するための機能です</p>
-                    <a href="#" class="btn btn-success">検索する</a>
-                </div>
-            </div>
-            <div class="col card m-1">
-                <div class="card-body">
-                    <h5 class="card-title">遺失物捜索依頼</h5>
-                    <hr>
-                    <p class="card-text">施設内で何か物を無くした際に，遺失物の捜索依頼を出すための機能です</p>
-                    <a href="#" class="btn btn-success">依頼する</a>
-                    <a href="#" class="btn btn-success">一覧</a>
-                </div>
-            </div>
-        </div>
+    <div class="w-50 p-3" style="background-color: #eee;">
+      <select class="form-select" id="inputGroupSelect02">
+      <option selected>カテゴリー入力</option>
+        <option value="1">鞄</option>
+        <option value="2">財布</option>
+        <option value="3">眼鏡</option>
+        <option value="4">時計</option>
+        <option value="5">電子機器</option>
+        <option value="6">文房具</option>
+        <option value="7">その他</option>
+      </select>
     </div>
 
+    <div class="border col-12">
+      <br>
+      <h2>色</h2>
+      <div class="row">
+          <div class="col-md">
+              <button type="button" class="btn btn-outline-danger btn-lg active">赤</button>
+              <button type="button" class="btn btn-outline-primary btn-lg active">青</button>
+              <button type="button" class="btn btn-outline-warning btn-lg active">黄色</button>
+              <button type="button" class="btn btn-outline-warning btn-lg active">オレンジ</button>
+              <button type="button" class="btn btn-outline-dark btn-lg active">黒</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg active">白</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg active">その他</button>
+          </div>
+      </div>
+  <br>
+  </div>
+      </div>
+  
     
 
     <footer class="fixed-bottom bg-success text-light text-end">
