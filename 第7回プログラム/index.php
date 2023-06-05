@@ -10,7 +10,7 @@
   
   <div class="container">
     <div class="row">
-      <div class="col p-5 text-white rounded mt-3 bg-success">
+      <div class="col p-5 text-white rounded ">
         <h1 class="display-4 fst-italic">拾得物管理システム</h1>
         <hr>
         <p>このシステムは文教大学湘南キャンパスの施設内における拾得物を管理するためのシステムです．プロジェクト演習BCの授業において学習用の演習システムとして開発を行います．</p>
