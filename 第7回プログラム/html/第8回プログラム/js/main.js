@@ -29,14 +29,18 @@ function get_fitem(tag_id, key_id){
 
 function get_fitem_detail(tag_ids, fid){
   $.getJSON(API_URL, {type:"json", data:"find_item_detail", fid:fid}, function(j){
-    var src = "<table class='table table-success'>";
     cnt=0;
-    src += "<tr><td>スクリプトで文字を書き出します（１）</td></tr>";
+    var src = "<table class='table table-success'>" + "拾得物の情報";
+    $.each(j["拾得物"], function(i,v){
+     src += "<tr>";
+     src += "<td>" + v["物品名"] + "</td>";
+     src += "</tr>"
+    });
     src += "</table>";
-    var src2 = "<table class='table table-success'>";
+    var src2 = "<table class='table table-success'>"　+　"変更履歴";
     $.each(j["変更履歴"], function(i,v){
       src2 += "<tr>";
-      src2 += "<td>スクリプトで文字を書き出します（２）</td>";
+      src2 += "<td>" + v["変更日時"] + " " + v["変更内容"] +  " " + v["氏名"] + "</td>";
       src2 += "</tr>";
     });
     src2 += "</table>";
@@ -44,3 +48,4 @@ function get_fitem_detail(tag_ids, fid){
     $("#"+tag_ids[1]).html(src2);
   }).fail(function(e){ console.log(e); });
 }
+
