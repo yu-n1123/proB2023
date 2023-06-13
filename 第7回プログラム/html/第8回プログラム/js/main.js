@@ -33,7 +33,7 @@ function get_fitem_detail(tag_ids, fid){
     var src = "<table class='table table-success'>" + "拾得物の情報";
     $.each(j["拾得物"], function(i,v){
      src += "<tr>";
-     src += "<td>" + v["物品名"] + "</td>";
+     src += "<td>" + v["物品大分類"] +"<td>"+ v["物品名"] + "<td>" + v["拾得場所"] +  "<td>" + v["色"] +"<td>"+ v["特徴"]+ "</td>";
      src += "</tr>"
     });
     src += "</table>";
