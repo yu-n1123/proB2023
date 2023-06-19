@@ -25,6 +25,7 @@ a.col-md m-auto p-1{
     -ms-user-select: none;
     user-select: none;
     -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     text-align: center;
     vertical-align: middle;
     text-decoration: none;
