@@ -1,52 +1,16 @@
-@charset "utf-8";
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+center{
+    padding: 0;
 }
-
-html {
-    -webkit-box-sizing: border-box;
+button{
+    /*コレ*/border: 3px solid #000;
+    /*コレ*/border-radius: 100px;
+    display: block;
+    width: 200px;
+    padding: 15px;
     box-sizing: border-box;
-    font-size: 62.5%;
-}
-.col-md m-auto p-1,
-a.col-md m-auto p-1{
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.5;
-    position: relative;
-    display: inline-block;
-    padding: 1rem 4rem;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    text-align: center;
-    vertical-align: middle;
+    background: #fff;
+    color: #000;
     text-decoration: none;
-    letter-spacing: 0.1em;
-    color: #212529;
-    border-radius: 0.5rem;
+    text-align: center;
+    margin: 10px 0;
 }
-
-.col-md m-auto p-1,
-a.col-md m-auto p-1 {
-    color: #fff;
-    background-color: #eaedf2;
-}
-
-.col-md m-auto p-1:hover,
-a.col-md m-auto p-1:hover {
-    color: #fff;
-    background-color: #eaedf2;
-}
-
-a.p-1 {
-    border-radius: 100vh;
-}
-
