@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="scc/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>拾得物管理システム </title>
 </head>
 
@@ -47,21 +47,23 @@
                 </ul>
                 <div class="container">
                     <div class="row mt-3 mb-1">
-                      <div class="col"><p class="h2 p-1  bg-primary w-50 rounded text-center text-white">登録画面</p></div>
+                        <div class="col">
+                            <p class="h2 p-1  bg-primary w-50 rounded text-center text-white">登録画面</p>
+                        </div>
                     </div>
+                </div>
             </div>
-        </div>
     </nav>
 
     <h4 padding 10px;>
-    <div class="Form">
-        <div class="Form-Item">
-            <p class="Form-Item-Label">
-                <samp class="Form-Item-Label-required">必須</samp>拾得物名
-            </p>
-            <input type="text" class="Form-Item-Input" placeholder="拾得物名">
+        <div class="Form">
+            <div class="Form-Item">
+                <p class="Form-Item-Label">
+                    <samp class="Form-Item-Label-required">必須</samp>拾得物名
+                </p>
+                <input type="text" class="Form-Item-Input" placeholder="拾得物名">
+            </div>
         </div>
-    </div>
     </h4>
 
     <h4 padding 10px;>
@@ -100,7 +102,7 @@
             <p class="Form-Item-Label">
                 <samp class="Form-Item-Label-required">必須</samp>拾得物の写真
             </p>
-        <input type="file" name="img"> 拾得物の写真を挿入
+            <input type="file" name="img"> 拾得物の写真を挿入
         </div>
     </h4>
 
@@ -139,7 +141,7 @@
             <input type="eamil" class="Form-Item-Input" placeholder="info@bunkyo.com">
         </div>
         <input type="submit" class="Form-Button" value="登録する">
-    </div>
+        </div>
     </h4>
 
     <footer class="fixed-bottom bg-primary text-light text-end">
