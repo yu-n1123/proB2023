@@ -112,12 +112,9 @@ function get_frequest(tag_id, key_id){
       if(v["物品名"].indexOf(key)>-1){
         src += "<tr>";
         src += "<td>" + v["大分類"] + "</td>";
-        src += "<td>" + v["物品名"] + "</td>";
-        src += "<td>" + v["拾得場所"] + "</td>";
+        src += "<td>" + v["遺失場所"] + "</td>";
         src += "<td>" + v["色"] + "</td>";
         src += "<td>" + v["特徴"] + "</td>";
-        src += "<td>" + v["変更日時"] + "</td>";
-        src += "<td>" + v["変更内容"] + "</td>";
         src += "</tr>";
         cnt++;
       }
@@ -125,5 +122,5 @@ function get_frequest(tag_id, key_id){
     src += "</table>";
     src = "検索結果：" + cnt + "件" + src;
     $("#"+tag_id).html(src);
-  }).fail(function(e){ console.log(e); });
+  });
 }
