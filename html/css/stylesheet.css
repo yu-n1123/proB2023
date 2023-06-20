@@ -1,4 +1,4 @@
-center{
+center {
     padding: 0;
 }
 
@@ -47,15 +47,16 @@ w-50 p-3 mt-2 mb-2 py-5 select {
     color: #333333;
     font-size: 1em;
     cursor: pointer;
-    
+
 }
 
 w-50 p-3 mt-2 mb-2 py-5 select:focus {
     outline: 1px solid #2589d0;
 }
 
-button{
-    /*コレ*/border-radius: 100px;
+button {
+    /*コレ*/
+    border-radius: 100px;
     display: block;
     width: 200px;
     padding: 15px;
@@ -63,4 +64,25 @@ button{
     text-decoration: none;
     text-align: center;
     margin: 10px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
