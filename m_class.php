@@ -102,7 +102,7 @@ class belongs_list extends data_list{
   }
 }
 
-class litems_list extends data_list{
+class frequest_items_list extends data_list{
   function __construct(){
     $sql  = "SELECT 遺失物.ID AS 遺失物ID, 遺失物.遺失物分類ID, 遺失物.遺失場所, 遺失物.色,遺失物.特徴, ";
     $sql .= "遺失物分類.ID AS 拾得物分類.ID, 拾得物分類.大分類, 拾得物分類.物品名 ";

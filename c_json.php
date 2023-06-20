@@ -10,6 +10,7 @@ if(isset($_REQUEST["type"],$_REQUEST["data"])){
   if($_REQUEST["type"] == "json" && $_REQUEST["data"] == "user") $obj = new user_list();
   if($_REQUEST["type"] == "json" && $_REQUEST["data"] == "category") $obj = new category_list();
   if($_REQUEST["type"] == "json" && $_REQUEST["data"] == "belongs") $obj = new belongs_list();
+  if($_REQUEST["type"] == "json" && $_REQUEST["data"] == "litems") $obj = new frequest_items_list();
   if($obj){
     $j = $obj->getJson();
     header("Content-Type: application/json; charset=utf-8");
