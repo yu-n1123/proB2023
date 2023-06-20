@@ -3,7 +3,7 @@ var API_URL = "http://localhost/probc/c_json.php";
 
 function get_fitem(tag_id, key_id){
   $.getJSON(API_URL, {type:"json", data:"find_item"}, function(j){
-    var src = "<table class='table table-success table-striped'><tr><th>大分類</th><th>物品名</th><th>拾得場所</th><th>色</th><th>特徴</th><th>日時</th><th>状態</th><th>操作</th></tr>";
+    var src = "<table class='table table-primary table-striped'><tr><th>大分類</th><th>物品名</th><th>拾得場所</th><th>色</th><th>特徴</th><th>日時</th><th>状態</th><th>操作</th></tr>";
     cnt=0;
     key=$("#"+key_id).val();
     $.each(j, function(i,v){
@@ -29,7 +29,7 @@ function get_fitem(tag_id, key_id){
 
 function get_fitem_detail(tag_ids, fid){
   $.getJSON(API_URL, {type:"json", data:"find_item_detail", fid:fid}, function(j){
-    var src = "<table class='table table-success'>";
+    var src = "<table class='table table-primary'>";
     cnt=0;
     v = j["拾得物"];
     src += "<tr><th>大分類</th><td>" + v["大分類"] + "</td></tr>";
@@ -38,7 +38,7 @@ function get_fitem_detail(tag_ids, fid){
     src += "<tr><th>色</th><td>" + v["色"] + "</td></tr>";
     src += "<tr><th>特徴</th><td>" + v["特徴"] + "</td></tr>";
     src += "</table>";
-    var src2 = "<table class='table table-success'><tr><th>日時</th><th>状態</th><th>対応者</th></tr>";
+    var src2 = "<table class='table table-primary'><tr><th>日時</th><th>状態</th><th>対応者</th></tr>";
     $.each(j["変更履歴"], function(i,v){
       src2 += "<tr>";
       src2 += "<td>" + v["変更日時"] + "</td>";
