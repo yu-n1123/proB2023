@@ -102,9 +102,9 @@ class belongs_list extends data_list{
   }
 }
 
-class request_item_detail extends data_list{
+class litems_list extends data_list{
   function __construct(){
-    $sql  = "SELECT 遺失物.ID AS 遺失物ID, 遺失物.遺失物分類ID, 遺失物.拾得場所, 遺失物.色,遺失物.特徴, ";
+    $sql  = "SELECT 遺失物.ID AS 遺失物ID, 遺失物.遺失物分類ID, 遺失物.遺失場所, 遺失物.色,遺失物.特徴, ";
     $sql .= "遺失物分類.ID AS 拾得物分類.ID, 拾得物分類.大分類, 拾得物分類.物品名 ";
     $sql .= "FROM 遺失物 INNER JOIN 拾得物分類 ON 遺失物.遺失物分類ID=拾得物分類.ID ";
     $sql .= "ORDER BY 遺失物ID ASC;";
@@ -113,6 +113,7 @@ class request_item_detail extends data_list{
     foreach($arr as $row) $this->dlist[] = new item($row);
   }
 }
+
 class item{
   function __construct($arg){
     foreach($arg as $i => $v){

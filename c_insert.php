@@ -45,7 +45,7 @@ if($_POST["data"] == "fitem"){
   }
 }else if($_POST["data"] == "litem"){
   if(isset($_POST["p1"],$_POST["p2"],$_POST["p3"],$_POST["p4"],$_POST["p5"])){
-    $sql = "INSERT INTO 遺失物 (遺失物分類ID,最終認知場所,色,特徴) VALUES (?,?,?,?);";
+    $sql = "INSERT INTO 遺失物 (遺失物分類ID,遺失場所,色,特徴) VALUES (?,?,?,?);";
     $arr = array($_POST["p1"],$_POST["p2"],$_POST["p3"],$_POST["p4"],$_POST["p5"]);
     $stmt = $my->prepare($sql);
     $stmt->execute($arr);
