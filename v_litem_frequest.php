@@ -29,7 +29,7 @@
                 <tr><td>特徴</td><td><input type="text" required class="form-control" name="p4"></td></tr>
             </table>
             <button class="btn btn-success" id="btn">申請</button>
-            <input type="hidden" name="data" value="">
+            <input type="hidden" name="data" value="litem">
             </form>
         </div>
     </div>
