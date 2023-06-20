@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row mt-3 mb-1">
             <div class="col">
-                <p class="h2 p-1  bg-primary w-50 rounded text-center text-white">捜索依頼一覧</p>
+                <p class="h2 p-1  bg-wihite w-50 rounded text-center text-white">捜索依頼一覧</p>
             </div>
             <div class="row mt-3">
                 <div class="col">
