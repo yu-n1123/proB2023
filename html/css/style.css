@@ -63,7 +63,8 @@
     padding: 0.3em;
     border-radius: 0.5em;
     margin-left:0.3em;
-    }
+ }
+
 @media screen and (max-width: 480px) {
     .Form-Item-Label-Required{
         border-radius: 4px;
