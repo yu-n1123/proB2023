@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>拾得物管理システム </title>
 </head>
 
@@ -66,6 +67,7 @@
 <form class="needs-validation" novalidate>
     <div class="row g-2">
         <div class="col-md-6 mb-3">
+            <span class="required"></span>
             <label for "valuemin02">姓</label>
             <input type="text" class="form-control" id="valuemin01" placeholder="First_name" value="太郎" required>
             <div class ="valid-feedback">
@@ -73,6 +75,7 @@
             </div>
 
         <div class="col-md-6 mb-3">
+            <span class="required"></span>
             <label for "valuemin02">名</label>
             <input type="text" class="form-control" id="valuemin02" placeholder="Last_name" value="文教" required>
             <div class ="valid-feedback">
@@ -83,7 +86,8 @@
 
         <div class="row-2">
             <div class="col-md-6 mb-3">
-                <label for "valuemin04">ご住所</label>
+            <span class="required"></span>
+            <label for "valuemin04">ご住所</label>
             <input type="text" class="form-control" id="valuemin03" placeholder="住所" required>
             <div class ="valid-feedback">
                 入力してください
@@ -91,6 +95,7 @@
          </div>
 
          <div class="col-md-3 mb-3">
+            <span class="required"></span>
             <label for "valuemin04">電話番号</label>
             <input type="text" class="form-control" id="valuemin04" placeholder="電話番号" required>
             <div class ="valid-feedback">
@@ -104,7 +109,9 @@
             <label for="floatingTextarea">物品情報入力</label>
             </div>
 
-        <button class="btn btn-primary"type="submit">登録</button>
+            <div>
+                <input type="submit" class="Form-Btn" value="変更">
+              </div>
 
     </div>
   <footer>
