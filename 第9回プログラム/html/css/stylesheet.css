@@ -1,0 +1,66 @@
+center{
+    padding: 0;
+}
+
+w-50 p-3 mt-2 mb-2 py-5 {
+    position: relative;
+}
+
+w-50 p-3 mt-2 mb-2 py-5::before,
+w-50 p-3 mt-2 mb-2 py-5::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+
+w-50 p-3 mt-2 mb-2 py-5::before {
+    right: 0;
+    display: inline-block;
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 0 3px 3px 0;
+    background-color: #2589d0;
+    content: '';
+}
+
+w-50 p-3 mt-2 mb-2 py-5::after {
+    position: absolute;
+    top: 50%;
+    right: 1.4em;
+    transform: translate(50%, -50%) rotate(45deg);
+    width: 6px;
+    height: 6px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    content: '';
+}
+
+w-50 p-3 mt-2 mb-2 py-5 select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    min-width: 230px;
+    height: 2.8em;
+    padding: .4em 3.6em .4em .8em;
+    border: 2px solid #2589d0;
+    border-radius: 3px;
+    color: #333333;
+    font-size: 1em;
+    cursor: pointer;
+    
+}
+
+w-50 p-3 mt-2 mb-2 py-5 select:focus {
+    outline: 1px solid #2589d0;
+}
+
+button{
+    /*コレ*/border-radius: 100px;
+    display: block;
+    width: 200px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 0;
+}
