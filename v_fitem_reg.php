@@ -10,7 +10,7 @@
 
   <div class="container">
     <div class="row mt-3 mb-1">
-        <div class="col"><p class="h2 p-1  bg-success w-50 rounded text-center text-white">拾得物登録</p></div>
+        <div class="col"><p class="h2 p-1  bg-primary w-50 rounded text-center text-white">拾得物登録</p></div>
     </div>
     <div class="row">
         <div class="col">
@@ -29,7 +29,7 @@
                 <tr><td>特徴</td><td><input type="text" required class="form-control" name="p4"></td></tr>
                 <tr><td>拾得者（ユーザ）</td><td><input type="text" required class="form-control user"><span class="valid-feedback"></span><input type="hidden" name="p5" value="" class="userid"></td></tr>
             </table>
-            <button class="btn btn-success" id="btn">登録</button>
+            <button class="btn btn-primary" id="btn">登録</button>
             <input type="hidden" name="data" value="fitem">
             </form>
         </div>

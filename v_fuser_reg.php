@@ -10,7 +10,7 @@
 
   <div class="container">
     <div class="row mt-3 mb-1">
-      <div class="col"><p class="h2 p-1  bg-success w-50 rounded text-center text-white">拾得者（ユーザ）登録</p></div>
+      <div class="col"><p class="h2 p-1  bg-primary w-50 rounded text-center text-white">拾得者（ユーザ）登録</p></div>
     </div>
     <div class="row">
         <div class="col">
@@ -28,7 +28,7 @@
                 <tr><td>電話番号</td><td><input type="text" required class="form-control" name="p3"></td></tr>
                 <tr><td>メールアドレス</td><td><input type="text" required class="form-control" name="p4"></td></tr>
             </table>
-            <button class="btn btn-success" id="btn">登録</button>
+            <button class="btn btn-primary" id="btn">登録</button>
             <input type="hidden" name="data" value="user">
             </form>
         </div>

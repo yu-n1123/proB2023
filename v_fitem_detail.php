@@ -10,8 +10,8 @@
   
   <div class="container">
     <div class="row mt-3 mb-1">
-      <div class="col"><p class="h2 p-1  bg-success w-100 rounded text-center text-white">拾得物詳細</p></div>
-      <div class="col align-self-end"><a href="v_fitem_search.php" class="badge btn-success">戻る</a></div>
+      <div class="col"><p class="h2 p-1  bg-primary w-100 rounded text-center text-white">拾得物詳細</p></div>
+      <div class="col align-self-end"><a href="v_fitem_search.php" class="badge btn-primary">戻る</a></div>
     </div>
     <div class="row">
         <div class="col">
@@ -37,7 +37,7 @@
                 <tr><td>対応者（ユーザ）</td><td><input type="text" required class="form-control user"><span class="valid-feedback"></span><input type="hidden" name="p1" value="" class="userid"></td></tr>
                 <tr><td>状態</td><td><select name="p3"><option value="返還">返還</option><option value="展示">展示</option><option value="期限切れ">期限切れ</option></select></td></tr>
             </table>
-            <button class="btn btn-success">変更</button>
+            <button class="btn btn-primary">変更</button>
             <input type="hidden" name="data" value="fitem_st">
 <?php
 echo("<input type='hidden' name='p2' value='{$_REQUEST["id"]}'>");
