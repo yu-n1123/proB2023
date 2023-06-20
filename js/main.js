@@ -16,7 +16,7 @@ function get_fitem(tag_id, key_id){
         src += "<td>" + v["特徴"] + "</td>";
         src += "<td>" + v["変更日時"] + "</td>";
         src += "<td>" + v["変更内容"] + "</td>";
-        src += "<td><a href='v_fitem_detail.php?id=" + v["拾得物ID"] + "' class='btn btn-success'>詳細</a></td>";
+        src += "<td><a href='v_fitem_detail.php?id=" + v["拾得物ID"] + "' class='btn btn-primary'>詳細</a></td>";
         src += "</tr>";
         cnt++;
       }
