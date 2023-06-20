@@ -55,18 +55,15 @@
         margin-top: 0;
     }
 }
-.Form-Item-Label-Required{
-    border-radius: 6px;
-    margin-right: 8px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    width: 48px;
-    display: inline-block;
-    text-align: center;
+.required::after {
+    content: "必須";
+    color: #ffffff;
     background: #5bc8ac;
-    color: #fff;
-    font-size: 14px;
-}
+    font-size: 0.8em;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    margin-left:0.3em;
+    }
 @media screen and (max-width: 480px) {
     .Form-Item-Label-Required{
         border-radius: 4px;
