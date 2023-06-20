@@ -41,12 +41,13 @@ if($_POST["data"] == "fitem"){
     $arr = array($_POST["p1"],$_POST["p2"],$_POST["p3"],$_POST["p4"]);
     $stmt = $my->prepare($sql);
     $stmt->execute($arr);
+    $fid = $my->lastInsertId();
     $np = "v_fuser_reg.php";
   }
 }else if($_POST["data"] == "litem"){
-  if(isset($_POST["p1"],$_POST["p2"],$_POST["p3"],$_POST["p4"],$_POST["p5"])){
+  if(isset($_POST["p1"],$_POST["p2"],$_POST["p3"],$_POST["p4"])){
     $sql = "INSERT INTO 遺失物 (遺失物分類ID,遺失場所,色,特徴) VALUES (?,?,?,?);";
-    $arr = array($_POST["p1"],$_POST["p2"],$_POST["p3"],$_POST["p4"],$_POST["p5"]);
+    $arr = array($_POST["p1"],$_POST["p2"],$_POST["p3"],$_POST["p4"]);
     $stmt = $my->prepare($sql);
     $stmt->execute($arr);
     $np = "v_litem_frequest.php";
