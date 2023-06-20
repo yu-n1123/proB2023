@@ -28,7 +28,7 @@
                 <tr><td>色</td><td><input type="text" required class="form-control" name="p3"></td></tr>
                 <tr><td>特徴</td><td><input type="text" required class="form-control" name="p4"></td></tr>
                 <tr><td>遺失者（ユーザ）</td><td><input type="text" required class="form-control user"><span class="valid-feedback"></span><input type="hidden" name="p5" value="" class="userid"></td></tr>
-            ]</table>
+            </table>
             <button class="btn btn-success" id="btn">申請</button>
             <input type="hidden" name="data" value="litem">
             </form>
