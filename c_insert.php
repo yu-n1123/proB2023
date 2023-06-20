@@ -49,6 +49,7 @@ if($_POST["data"] == "fitem"){
     $arr = array($_POST["p1"],$_POST["p2"],$_POST["p3"],$_POST["p4"],$_POST["p5"]);
     $stmt = $my->prepare($sql);
     $stmt->execute($arr);
+    $np = "v_frequest.php";
   }
 }
 header("location:{$np}");
