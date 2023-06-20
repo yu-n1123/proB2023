@@ -13,6 +13,11 @@
             <div class="col">
                 <p class="h2 p-1  bg-primary w-50 rounded text-center text-white">捜索依頼一覧</p>
             </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <span id="r"></span>
+                </div>
+            </div>
         </div>
         <?php include("./html/footer.htm"); ?>
         <script src="./js/main.js"></script>
