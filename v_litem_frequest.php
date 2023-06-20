@@ -10,7 +10,7 @@
 
   <div class="container">
     <div class="row mt-3 mb-1">
-        <div class="col"><p class="h2 p-1  bg-success w-50 rounded text-center text-white">拾得物登録</p></div>
+        <div class="col"><p class="h2 p-1  bg-success w-50 rounded text-center text-white">遺失物捜索依頼</p></div>
     </div>
     <div class="row">
         <div class="col">
